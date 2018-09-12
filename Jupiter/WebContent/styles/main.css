@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -76,7 +77,7 @@ ul {
 .container>header {
 	align-items: center;
 	background:
-		url('http://folkartcarsi.com/img/4.jpg')
+		url('http://prophoto.com.cy/wp-content/galleries/food/food-restaurant-photographer-cyprus-10.jpg')
 		no-repeat 50% 50%;
 	background-size: 100%;
 	display: flex;
