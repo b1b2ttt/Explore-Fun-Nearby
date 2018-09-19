@@ -14,6 +14,9 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import db.DBConnection;
+import db.DBConnectionFactory;
+
 //import com.sun.xml.internal.bind.v2.schemagen.xmlschema.List;
 
 import entity.Item;
@@ -45,16 +48,25 @@ public class SearchItem extends HttpServlet {
 		double lon = Double.parseDouble(request.getParameter("lon"));
 		
 		// term can be empty
-		String term= request.getParameter("term");
-		TicketMasterAPI tmAPI = new TicketMasterAPI();
-		List<Item> items = tmAPI.search(lat, lon, term);
+		String term = request.getParameter("term");
+		//TicketMasterAPI tmAPI = new TicketMasterAPI();
+		//List<Item> items = tmAPI.search(lat, lon, term);
+		
+		DBConnection connection = DBConnectionFactory.getConnection();
 		
 		JSONArray array = new JSONArray();
 		try {
+			List<Item> items = connection.searchItems(lat, lon, term);
+		
+			
 			for (Item item : items) {
-				JSONObject obj = item.toJSONObject();
-				array.put(obj);
+				//JSONObject obj = item.toJSONObject();
+				//array.put(obj);
+				array.put(item.toJSONObject());
+				
 			}
+			
+			//RpcHelper.writeJsonArray(response, array);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
