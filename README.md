@@ -9,9 +9,9 @@ Explore Fun Things Nearby
 
 ## Description
 Find fun events and things around you!
-● Created Java servlets with RESTful APIs to enable users to search events based on user favorite items (Apache Tomcat, HTML, CSS and JavaScript).
-● Built MySQL/ MongoDB databases to parse ticket data from TicketMaster API.
-● Deployed a server in Amazon EC2 and tested with Apache JMeter.
+- Created Java servlets with RESTful APIs to enable users to search events based on user favorite items (Apache Tomcat, HTML, CSS and JavaScript).
+- Built MySQL/ MongoDB databases to parse ticket data from TicketMaster API.
+- Deployed a server in Amazon EC2 and tested with Apache JMeter.
 
 ##Demo
 ### Register
