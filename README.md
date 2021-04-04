@@ -13,7 +13,7 @@ Find fun events and things around you!
 - Built MySQL/ MongoDB databases to parse ticket data from TicketMaster API.
 - Deployed a server in Amazon EC2 and tested with Apache JMeter.
 
-##Demo
+## Demo
 ### Register
 ![](https://media.giphy.com/media/fu2SuM4tLQEvrlXnwt/giphy.gif)
 
